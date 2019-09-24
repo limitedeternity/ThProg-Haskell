@@ -4,13 +4,16 @@
 кого алфавита; в противном случае функция возвращает False.
 -}
 
+{-
 f :: Char -> Bool
 f c 
   | c >= 'a' && c <= 'z' = True
   | c >= 'A' && c <= 'Z' = True
   | otherwise = False
+-}
 
+f c = c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z'
 
-test1 = f 'c' == True
+test1 = f 'c' &&  f 'Z' && not (f '5')
 test2 = f 'Z' == True
 test3 = f '5' == False

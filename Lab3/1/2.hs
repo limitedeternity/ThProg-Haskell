@@ -1,4 +1,4 @@
-f x y z = do
+f x y z =
     if x == 0
         then 0
         else if y + 1 == x
@@ -11,3 +11,6 @@ f x y z = do
 -- 4) 5 3 3
 -- 5) 5 4 4
 -- => 4
+
+test =    (f 5 0 0 == 4)
+       && (f 1000 0 0 == 999)

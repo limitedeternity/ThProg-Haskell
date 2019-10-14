@@ -1,6 +1,7 @@
-fac n | n <= 0 = 1
-      | otherwise = n * fac(n - 1)
+-- Число способов выбрать n элементов из m-множества без учёта порядка
+c n m | n == 0 = 1
+      | n == m = 1
+      | n > m = 0
+      | otherwise = c (n - 1) (m - 1) + c n (m - 1)
 
-c n m = (fac n) / ((fac (n - m)) * fac m)
-
-test1 = c 5 3 == 10
+test1 = c 3 5 == 10

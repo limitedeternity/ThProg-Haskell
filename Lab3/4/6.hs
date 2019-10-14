@@ -2,7 +2,7 @@ f =
     g 0
     where
         g x = 
-            if x == 10000
+            if x == 40
                 then sqrt(8)
                 else 
                     if x `mod` 2 == 0

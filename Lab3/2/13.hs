@@ -6,3 +6,4 @@ f n =
 
 test1 = f 1 == sqrt(3)
 test2 = f 2 == sqrt(3 + sqrt(3 * 2))
+test3 = f 3 == sqrt(3 + sqrt(3 * 2 + sqrt(3 * 3)))

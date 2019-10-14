@@ -4,7 +4,7 @@ z p n | n<p  = 0
 
 -- Максимальная степень z, такая, что: p^z < n
 
-test1 = z 2 12 == 3
-test2 = z 4 8 == 1
-test3 = z 3 8 == 1
+test1 = z 2 12 == floor (logBase 2 12)
+test2 = z 4 8  == 1
+test3 = z 3 8  == 1
 test4 = z 3 19 == 2
